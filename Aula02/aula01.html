@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="victoria_secrets.jpeg">
+    <title>EXERCICIO 01 - JAVASCRIPT </title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Lara de Brito, larabrito@gmail.com.br">
+</head>
+<body>
+
+    <H1><mark>MANIPULANDO ELEMENTOS (TAGS)</mark> DO HTML ATRÁVES DO JS</H1>
+    <hr>
+    <div>
+        <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
+        <hr>
+        <p>Aprender é muito legal</p>
+        <p>E para ajudar o aprendizado, é preciso praticar</p>
+    </div>
+    <script>
+        const tags_p = document.getElementsByTagName('p');
+        console.log("MINHAS TAGS <p>", tags_p);
+        let tag_p_1 = tags_p[0]
+
+        tag_p_1.style.backgroundColor="purple";
+        tag_p_1.style.color="white";
+        tag_p_1.style.textAlign="center";
+        tag_p_1.style.fontSize="30px"
+
+
+
+    </script>
+
+</body>
+</html> 

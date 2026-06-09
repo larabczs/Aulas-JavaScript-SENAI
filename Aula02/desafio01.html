@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="victoria_secrets.jpeg">
+    <title>DESAFIO 01 - JAVASCRIPT </title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Lara de Brito, larabrito@gmail.com.br">
+</head>
+<style>
+    body{
+        font-family: Georgia, serif;
+        background-color: #dffefe;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+        color: #444;
+    }
+
+    mark{
+        background-color: yellow;
+        padding: 5px;
+    }
+
+    .caixa{
+        border: 4px solid salmon;
+        padding: 20px;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    .topo{
+        background-color: purple;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .centro{
+        text-align: center;
+        font-size: 50px;
+        color: #666;
+        margin: 80px 0;
+    }
+
+    .rodape{
+        background-color: yellow;
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        color: #555;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>
+    <mark>MANIPULANDO ELEMENTOS (TAGS)</mark><br>
+    DO HTML ATRAVÉS DO JS
+</h1>
+
+<hr>
+
+<div class="caixa">
+
+    <p class="topo">
+        ESTAMOS APRENDENDO JAVASCRIPT!
+    </p>
+
+    <p id="textoPrincipal">
+        Aprender é Muito Legal
+    </p>
+
+    <p id="textoRodape">
+        A turma do DEV é espetacular demais!
+    </p>
+
+</div>
+
+<script>
+
+    const tags_p = document.getElementsByTagName('p');
+
+    tags_p[0].style.backgroundColor = "purple";
+    tags_p[0].style.color = "white";
+
+    tags_p[1].style.textAlign = "center";
+    tags_p[1].style.fontSize = "40pt";
+    tags_p[1].style.color = "gray";
+
+    tags_p[2].style.backgroundColor = "yellow";
+    tags_p[2].style.textAlign = "center";
+    tags_p[2].style.fontSize = "18pt";
+    tags_p[2].style.fontWeight = "bold";
+
+    tags_p[2].innerText = "A TURMA DO DEV É ESPETACULAR DEMAIS!";
+
+</script>
+
+</body>
+</html>
