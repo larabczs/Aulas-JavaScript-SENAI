@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="victoria_secrets.jpeg">
+    <title>AULA 04 - JAVASCRIPT </title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Lara de Brito, larabrito@gmail.com.br">
+</head>
+<body>
+
+    <h1>Integrando os recursos de  interatividade do JS</h1>
+    <hr>
+    <script>
+        window.alert("Seja bem-vindo ao site");
+        let nome =  window.prompt("Qual o seu nome?");
+        window.alert(nome);
+        console.log(nome);
+        let resposta = window.confirm("Você deseja sair da página?");
+
+        if(resposta==true){
+            setTimeout(() => {
+                window.open("index.html");
+            }, 3000); // 3000 milisegundos = 3
+        }else{
+            window.confirm(nome + ", você vai continuar nessa página!")
+        }
+
+    </script>
+
+</body>
+</html>

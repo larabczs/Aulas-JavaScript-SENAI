@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="victoria_secrets.jpeg">
+    <title>DESAFIO 02- JAVASCRIPT </title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Lara de Brito, larabrito@gmail.com.br">
+</head>
+<body>
+    <script>
+        let num1 = Number(window.prompt("Digite o primeiro número:"));
+        let num2 = Number(window.prompt("Digite o segundo número:"));
+
+        let resposta = window.confirm("Clique em OK para SOMAR ou Cancelar para SUBTRAIR");
+
+        if (resposta) {
+            window.alert("Resultado: " + (num1 + num2));
+        } else {
+            window.alert("Resultado: " + (num1 - num2));
+        }
+    </script>
+</body>
+</html>
